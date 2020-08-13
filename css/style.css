@@ -1,0 +1,44 @@
+.wrapper {
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 1px 1px 15px rgba(0,0,0,0.12);
+    padding: 20px;
+}
+.custom-input{
+    width: calc(100% - 33px);
+    padding: 15px;
+    outline: 0;
+    border: 1px solid silver;
+    border-radius: 4px;
+}
+#my-tasks {
+  padding: 0;
+  margin: 0;
+  margin-top: 15px;
+  list-style: none;
+}
+#my-tasks li {
+    background-color: lightskyblue;
+    padding: 15px 10px;
+    padding-right: 50px;
+    position: relative;
+    border-radius: 4px;
+}
+#my-tasks li:hover {
+background-color: lightgray;
+transition: all 0.3s ease-in-out;
+}
+#my-tasks li:not(:last-child){
+    margin-bottom: 15px;
+}
+.completed-task {
+    background-color: greenyellow !important;
+    text-decoration: line-through;
+}
+.remove-task::after {
+    content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgMGMtNi42MjcgMC0xMiA1LjM3My0xMiAxMnM1LjM3MyAxMiAxMiAxMiAxMi01LjM3MyAxMi0xMi01LjM3My0xMi0xMi0xMnptNC41OTcgMTcuOTU0bC00LjU5MS00LjU1LTQuNTU1IDQuNTk2LTEuNDA1LTEuNDA1IDQuNTQ3LTQuNTkyLTQuNTkzLTQuNTUyIDEuNDA1LTEuNDA1IDQuNTg4IDQuNTQzIDQuNTQ1LTQuNTg5IDEuNDE2IDEuNDAzLTQuNTQ2IDQuNTg3IDQuNTkyIDQuNTQ4LTEuNDAzIDEuNDE2eiIvPjwvc3ZnPg==");
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    color: red
+}
